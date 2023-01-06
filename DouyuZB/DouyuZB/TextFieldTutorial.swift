@@ -12,7 +12,8 @@ struct TextFieldTutorial: View {
 //		basicUsage
 //		formatterTextField
 //		midifers
-		styleTextField
+//		styleTextField
+		customStyle
 	}
 	
 	@State private var email:String = ""
@@ -62,7 +63,6 @@ struct TextFieldTutorial: View {
 		return predicate.evaluate(with: email)
 	}
 	
-	
 	// Midifiers
 	var midifers:some View {
 		VStack {
@@ -110,7 +110,34 @@ struct TextFieldTutorial: View {
 		}
 	}
 	
+	// custome style
+	@State var searchContent = ""
+	var customStyle:some View {
+		VStack(alignment:.leading, spacing:20) {
+			Text("Custom TextField style").font(.title2)
+			TextField("Search...", text: $searchContent)
+				.textFieldStyle(OvalTextFieldStyle())
+//				.textFieldStyle(UnderlineTextFieldStyle())
+		}
+		.padding()
+	}
 }
+
+// 自定义textField样式
+struct OvalTextFieldStyle: textFieldStyle {
+	func _body(configuration: TextField<Self._Lable>) -> some View {
+		HStack {
+			Image(systemName:"magnifyingglass")
+				.foregroundColor(.gray)
+			configuration
+				.padding(.vertical, 10)
+		}
+		.padding(.horizontal, 10)
+		.background(.yellow)
+		.cornerRadius(20)
+		.shadow(color: .gray, radius: 2)
+	}
+} // OvalTextField{} end
 
 struct ContentView_Preview:PreviewProvider {
 	static var previews: some View {
