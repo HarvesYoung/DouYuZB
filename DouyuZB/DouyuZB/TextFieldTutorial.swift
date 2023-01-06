@@ -8,10 +8,10 @@ import SwiftUI
 
 struct TextFieldTutorial: View {
 	var body:some View {
-//		basicUsage
-//		formatterTextField
-//		midifers
-//		styleTextField
+		//		basicUsage
+		//		formatterTextField
+		//		midifers
+		//		styleTextField
 		customStyle
 	}
 	
@@ -39,7 +39,7 @@ struct TextFieldTutorial: View {
 			Color.white
 				.onTapGesture{
 					print("tap action click")
-//					endEditing()
+					//					endEditing()
 				}
 		)
 	}
@@ -70,10 +70,10 @@ struct TextFieldTutorial: View {
 				.keyboardType(.emailAddress)
 				.autocapitalization(.words)
 				.disableAutocorrection(true)
-//				.textCase(.lowercase) // 定义输入框placeholder大小写
+			//				.textCase(.lowercase) // 定义输入框placeholder大小写
 				.accentColor(.red) // 定义输入框光标颜色
 				.padding()
-			.border(.gray)
+				.border(.gray)
 			
 			HStack {
 				Text("mail = \(email)")
@@ -99,13 +99,13 @@ struct TextFieldTutorial: View {
 				TextField("family name", text: $familyName)
 			}
 			.textFieldStyle(PlainTextFieldStyle())
-			#if os(macOS)
+#if os(macOS)
 			VStack {
 				TextField("given name", text: $givenName)
 				TextField("family name", text: $familyName)
 			}
 			.textFieldStyle(DefaultTextFieldStyle())
-			#endif
+#endif
 		}
 	}
 	
@@ -115,28 +115,28 @@ struct TextFieldTutorial: View {
 		VStack(alignment:.leading, spacing:20) {
 			Text("Custom TextField style").font(.title2)
 			TextField("Search...", text: $searchContent)
-				.textFieldStyle(OvalTextFieldStyle())
-//				.textFieldStyle(UnderlineTextFieldStyle())
+//				.textFieldStyle(OvalTextFieldStyle())
+//							.textFieldStyle(UnderlineTextFieldStyle())
 		}
 		.padding()
 	}
 }
 
 // 自定义textField样式
-struct OvalTextFieldStyle: textFieldStyle {
-	func _body(configuration: TextField<Self._Lable>) -> some View {
-		HStack {
-			Image(systemName:"magnifyingglass")
-				.foregroundColor(.gray)
-			configuration
-				.padding(.vertical, 10)
-		}
-		.padding(.horizontal, 10)
-		.background(.yellow)
-		.cornerRadius(20)
-		.shadow(color: .gray, radius: 2)
-	}
-} // OvalTextField{} end
+//struct OvalTextFieldStyle: TextFieldStyle {
+//	func _body(configuration: TextField<Self._Lable>) -> some View {
+//		HStack {
+//			Image(systemName:"magnifyingglass")
+//				.foregroundColor(.gray)
+//			configuration
+//				.padding()
+//		}
+//		.padding(.horizontal, 10)
+//		.background(.yellow)
+//		.cornerRadius(20)
+//		.shadow(color: .gray, radius: 2)
+//	}
+//} // OvalTextField{} end
 
 struct ContentView_Preview:PreviewProvider {
 	static var previews: some View {

@@ -11,6 +11,7 @@
 		5CE03DBA29608B1F000A3B61 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE03DB929608B1F000A3B61 /* ContentView.swift */; };
 		5CE03DBC29608B20000A3B61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CE03DBB29608B20000A3B61 /* Assets.xcassets */; };
 		5CE03DBF29608B20000A3B61 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CE03DBE29608B20000A3B61 /* Preview Assets.xcassets */; };
+		5CF98F0A29688063001BAE80 /* TextFieldTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF98F0929688063001BAE80 /* TextFieldTutorial.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		5CE03DB929608B1F000A3B61 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5CE03DBB29608B20000A3B61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CE03DBE29608B20000A3B61 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5CF98F0929688063001BAE80 /* TextFieldTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTutorial.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				5CE03DB929608B1F000A3B61 /* ContentView.swift */,
 				5CE03DBB29608B20000A3B61 /* Assets.xcassets */,
 				5CE03DBD29608B20000A3B61 /* Preview Content */,
+				5CF98F0929688063001BAE80 /* TextFieldTutorial.swift */,
 			);
 			path = DouyuZB;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CF98F0A29688063001BAE80 /* TextFieldTutorial.swift in Sources */,
 				5CE03DBA29608B1F000A3B61 /* ContentView.swift in Sources */,
 				5CE03DB829608B1F000A3B61 /* DouyuZBApp.swift in Sources */,
 			);
