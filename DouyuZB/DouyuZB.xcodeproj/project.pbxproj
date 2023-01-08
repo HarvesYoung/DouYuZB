@@ -7,20 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C1B4471296AC2B7000A103F /* default_avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C1B4470296AC2B7000A103F /* default_avatar.png */; };
 		5CE03DB829608B1F000A3B61 /* DouyuZBApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE03DB729608B1F000A3B61 /* DouyuZBApp.swift */; };
 		5CE03DBA29608B1F000A3B61 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE03DB929608B1F000A3B61 /* ContentView.swift */; };
 		5CE03DBC29608B20000A3B61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CE03DBB29608B20000A3B61 /* Assets.xcassets */; };
-		5CE03DBF29608B20000A3B61 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CE03DBE29608B20000A3B61 /* Preview Assets.xcassets */; };
 		5CF98F0A29688063001BAE80 /* TextFieldTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF98F0929688063001BAE80 /* TextFieldTutorial.swift */; };
+		5CF98F0C296ABF5A001BAE80 /* ImageTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF98F0B296ABF5A001BAE80 /* ImageTutorial.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C1B4470296AC2B7000A103F /* default_avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = default_avatar.png; path = ../../../../Documents/images/iharves_app/default_avatar.png; sourceTree = "<group>"; };
 		5CE03DB429608B1F000A3B61 /* DouyuZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouyuZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CE03DB729608B1F000A3B61 /* DouyuZBApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DouyuZBApp.swift; sourceTree = "<group>"; };
 		5CE03DB929608B1F000A3B61 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5CE03DBB29608B20000A3B61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5CE03DBE29608B20000A3B61 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5CF98F0929688063001BAE80 /* TextFieldTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTutorial.swift; sourceTree = "<group>"; };
+		5CF98F0B296ABF5A001BAE80 /* ImageTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTutorial.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,19 +57,12 @@
 			children = (
 				5CE03DB729608B1F000A3B61 /* DouyuZBApp.swift */,
 				5CE03DB929608B1F000A3B61 /* ContentView.swift */,
+				5C1B4470296AC2B7000A103F /* default_avatar.png */,
 				5CE03DBB29608B20000A3B61 /* Assets.xcassets */,
-				5CE03DBD29608B20000A3B61 /* Preview Content */,
 				5CF98F0929688063001BAE80 /* TextFieldTutorial.swift */,
+				5CF98F0B296ABF5A001BAE80 /* ImageTutorial.swift */,
 			);
 			path = DouyuZB;
-			sourceTree = "<group>";
-		};
-		5CE03DBD29608B20000A3B61 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				5CE03DBE29608B20000A3B61 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,7 +123,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CE03DBF29608B20000A3B61 /* Preview Assets.xcassets in Resources */,
+				5C1B4471296AC2B7000A103F /* default_avatar.png in Resources */,
 				5CE03DBC29608B20000A3B61 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CF98F0A29688063001BAE80 /* TextFieldTutorial.swift in Sources */,
+				5CF98F0C296ABF5A001BAE80 /* ImageTutorial.swift in Sources */,
 				5CE03DBA29608B1F000A3B61 /* ContentView.swift in Sources */,
 				5CE03DB829608B1F000A3B61 /* DouyuZBApp.swift in Sources */,
 			);
