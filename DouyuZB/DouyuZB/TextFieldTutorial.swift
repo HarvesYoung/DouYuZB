@@ -12,8 +12,8 @@ struct TextFieldTutorial: View {
 		//		formatterTextField
 		//		midifers
 		//		styleTextField
-//		customStyle
-		clearButton
+		customStyle
+//		clearButton
 	}
 	
 	@State private var email:String = ""
@@ -128,10 +128,10 @@ struct TextFieldTutorial: View {
 //			.autocapitalization(.words)
 //			.textFieldStyle(TextFieldClearButtonStyle(text: $email))
 //	} // clearButton
-//	
+//
 //	struct TextFieldClearButtonStyle:TextFieldStyle {
 //		@Binding var text:String
-//		
+//
 //		func _body(configuration:TextField<Self._Lable>) -> some View {
 //			HStack {
 //				configuration
