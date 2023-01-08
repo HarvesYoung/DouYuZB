@@ -12,7 +12,8 @@ struct TextFieldTutorial: View {
 		//		formatterTextField
 		//		midifers
 		//		styleTextField
-		customStyle
+//		customStyle
+		clearButton
 	}
 	
 	@State private var email:String = ""
@@ -120,6 +121,38 @@ struct TextFieldTutorial: View {
 		}
 		.padding()
 	}
+	
+	
+//	var clearButton:some View {
+//		TextField("input your email", text: $email)
+//			.autocapitalization(.words)
+//			.textFieldStyle(TextFieldClearButtonStyle(text: $email))
+//	} // clearButton
+//	
+//	struct TextFieldClearButtonStyle:TextFieldStyle {
+//		@Binding var text:String
+//		
+//		func _body(configuration:TextField<Self._Lable>) -> some View {
+//			HStack {
+//				configuration
+//					.padding()
+//				if !text.isEmpty {
+//					Button(action: {
+//						self.text = ""
+//					}, lable: {
+//						Image(systemName:"xmark.circle.fill")
+//							.foregroundColor(.gray)
+//					})
+//					.padding(.trailing, 10)
+//				}
+//			}
+//			.overlay(
+//				RoundeRectangle(cornerRadius: 12)
+//					.stroke(Color.gray, lineWidth:1)
+//			)
+//			.padding(.horizontal, 10)
+//		}
+//	}
 }
 
 // 自定义textField样式
