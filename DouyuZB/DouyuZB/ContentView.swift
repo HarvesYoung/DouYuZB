@@ -3,6 +3,8 @@ import SwiftUI
 struct ContentView:View {
 	@State private var alertIsVisable:Bool = false
 	
+	@State private var sliderValue:Double = 50.0
+	
 	var body:some View {
 		VStack {
 			Text("🎣🎣🎣\n让鱼竿尽可能接近鱼")
@@ -18,7 +20,7 @@ struct ContentView:View {
 			HStack {
 				Text("1米")
 					.bold()
-				Slider(value:.constant(50), in: 1.0...100.0)
+				Slider(value: self.$sliderValue, in: 1.0...100.0)
 				Text("100米")
 					.bold()
 			}
@@ -30,11 +32,13 @@ struct ContentView:View {
 				Text("点我")
 			}
 			.alert(isPresented: $alertIsVisable, content: {
+//				var roundedValue:Int = Int(self.sliderValue)
 				return Alert(
 					title: Text("弹窗"),
-					message: Text("这是一个提示框"),
+					message: Text("滑块的数值：\(self.sliderValue.rounded())"),
 					dismissButton: .default(Text("真棒")))
 			})
+			
 		} // VStack{} end
 	}
 }
