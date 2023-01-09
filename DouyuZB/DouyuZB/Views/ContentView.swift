@@ -4,6 +4,7 @@ struct ContentView:View {
 	@State private var alertIsVisable:Bool = false
 	
 	@State private var sliderValue:Double = 50.0
+	@State private var game:Game = Game()
 	
 	var body:some View {
 		VStack {
@@ -13,7 +14,7 @@ struct ContentView:View {
 				.multilineTextAlignment(.center)
 				.lineSpacing(10.0)
 				.font(.footnote)
-			Text("89米")
+			Text("\(String(game.target)) 米")
 				.kerning(-1.0)
 				.font(.largeTitle)
 				.fontWeight(.black)
@@ -32,10 +33,10 @@ struct ContentView:View {
 				Text("点我")
 			}
 			.alert(isPresented: $alertIsVisable, content: {
-//				var roundedValue:Int = Int(self.sliderValue)
+				var roundedValue:Int = Int(self.sliderValue.rounded())
 				return Alert(
-					title: Text("弹窗"),
-					message: Text("滑块的数值：\(self.sliderValue.rounded())"),
+					title: Text("你好呀!"),
+					message: Text("滑块的数值：\(roundedValue),\n你本轮获得了\(self.game.points(sliderValue: roundedValue))"),
 					dismissButton: .default(Text("真棒")))
 			})
 			
