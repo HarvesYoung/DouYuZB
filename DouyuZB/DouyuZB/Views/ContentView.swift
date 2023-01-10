@@ -33,10 +33,10 @@ struct ContentView:View {
 				Text("点我")
 			}
 			.alert(isPresented: $alertIsVisable, content: {
-				var roundedValue:Int = Int(self.sliderValue.rounded())
+				let roundedValue:Int = Int(self.sliderValue.rounded())
 				return Alert(
 					title: Text("你好呀!"),
-					message: Text("滑块的数值：\(roundedValue),\n你本轮获得了\(self.game.points(sliderValue: roundedValue))"),
+					message: Text("滑块的数值：\(roundedValue),\n你本轮获得了\(self.game.points(sliderValue: roundedValue)) 分"),
 					dismissButton: .default(Text("真棒")))
 			})
 			

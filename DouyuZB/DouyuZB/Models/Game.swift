@@ -13,6 +13,17 @@ struct Game {
 	var round:Int = 1 // 游戏局数
 	
 	func points(sliderValue:Int) -> Int {
-		return 999
+//		1、绝对值写法
+//		return (100 - abs(sliderValue - self.target))
+		100 - abs(sliderValue - self.target) // return可以省略
+		
+//		2、if判断语句
+//		var difference:Int = 0 // 默认为0，表示滑块值与随机数字相等
+//		if sliderValue > self.target {
+//			difference = sliderValue - self.target
+//		} else if sliderValue < self.target {
+//			difference = self.target - sliderValue
+//		}
+//		return 100 - difference
 	} // points() end
 } // Game{} end
